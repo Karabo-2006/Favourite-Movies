@@ -8,17 +8,21 @@
         body {
             font-family: Arial, sans-serif;
             line-height: 1.6;
-            max-width: 800px;
+            max-width: 1000px;
             margin: 0 auto;
             padding: 20px;
             background-color: #f5f5f5;
             color: #333;
+             display: flex;
+            flex-direction: column;
+            align-items: flex-end;
         }
         
         h1 {
-            text-align: center;
+            text-align: right;
             margin-bottom: 40px;
             color: #222;
+            width: 100%;
         }
         
         h2 {
@@ -27,35 +31,48 @@
             color: #222;
             border-bottom: 1px solid #ddd;
             padding-bottom: 10px;
+            text-align: right;
+            width: 100%;
         }
         
         .movie {
             margin-bottom: 40px;
+            width: 100%;
+            text-align: right;
         }
         
         .movie-image {
-            text-align: center;
-            margin: 20px 0;
+            float: right;
+            margin: 0 0 20px 20px;
+            width: 150px;
+            height: 200px;
+            background-color: #e0e0e0;
+            border: 1px solid #ccc;
+            display: flex;
+            align-items: center;
+            justify-content: center;
             color: #666;
             font-style: italic;
         }
         
         .movie-description {
             margin-bottom: 15px;
+            text-align: right;
         }
         
         .movie-links {
             margin-top: 10px;
+           text-align: right;
         }
         
         .movie-links a {
             color: #0066cc;
-            text-decoration: none;
+            text-decoration: underline;
             margin-right: 15px;
         }
         
         .movie-links a:hover {
-            text-decoration: underline;
+            text-decoration: none;
         }
         
         hr {
@@ -63,17 +80,24 @@
             height: 1px;
             background-color: #ddd;
             margin: 40px 0;
+            width: 100%;
+        }
+
+        .clearfix::after {
+            content: "";
+            clear: both;
+            display: table;
         }
     </style>
 </head>
 <body>
     <h1>Karabo's Favourite Movies</h1>
     
-    <div class="movie">
+    <div class="movie clearfix">
         <h2>A Week Away</h2>
         
         <div class="movie-image">
-            <img src="R (1).jpeg" alt="A Week Away">
+           <div style="text-align: center; padding: 10px;"> <img src="R (1).jpeg" alt="A Week Away"> </div>
         </div>
         
         <p class="movie-description">
@@ -89,13 +113,13 @@
     
     <hr>
     
-    <div class="movie">
+    <div class="movie clearfix">
         <h2>Every Day</h2>
         
         <div class="movie-image">
-            <img src="R.jpeg" alt="Every Day">
+          <div style="text-align: center; padding: 10px;">  <img src="R.jpeg" alt="Every Day"> </div>
         </div>
-        
+
         <p class="movie-description">
             A teenage girl falls in love with a mysterious spirit named "A" who inhabits a different 
             body every day. A unique exploration of love beyond physical appearance.
@@ -109,11 +133,11 @@
     
     <hr>
     
-    <div class="movie">
+    <div class="movie clearfix">
         <h2>The Fast and The Furious: Tokyo Drift</h2>
         
         <div class="movie-image">
-            <img src="g5pxxYlRJU7bG6ijgDbewXonmSY.webp" alt="The Fast and The Furious: Tokyo Drift">
+            <div style="text-align: center; padding: 10px;"> <img src="g5pxxYlRJU7bG6ijgDbewXonmSY.webp" alt="The Fast and The Furious: Tokyo Drift"> </div>
         </div>
         
         <p class="movie-description">
