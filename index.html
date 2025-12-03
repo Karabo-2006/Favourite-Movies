@@ -73,23 +73,31 @@
         
         .movie-text {
             max-width: 500px;
+            display: flex;
+            flex-direction: column;
+        }
+        .movie-layout {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            gap: 15px;
+            max-width: 500px;
         }
         
         .movie-description {
-            margin-bottom: 15px;
+            margin-bottom: 0;
             text-align: left;
         }
-        
+
         .movie-links {
-            margin-top: 10px;
-           text-align: left;
+            text-align: right;
         }
         
         .movie-links a {
             color: #0066cc;
             text-decoration: underline;
-            margin-bottom: 5px;
             display: block;
+            margin-bottom: 5px;
         }
         
         .movie-links a:hover {
