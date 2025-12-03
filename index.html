@@ -35,36 +35,34 @@
             width: 100%;
         }
         
-        .movie {
+         .movie {
             margin-bottom: 40px;
-            width: 100%;
             text-align: left;
         }
-
+        
         .movie-content {
             display: flex;
             justify-content: flex-end;
-            align-items: flex-start;
             gap: 20px;
-            margin-bottom: 15px;
+            align-items: flex-start;
+        }
+        
+        .movie-image-container {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            gap: 15px;
+            max-width: 150px;
         }
 
         .movie-image {
-            float: left;
-            margin: 0 0 20px 20px;
             width: 150px;
             height: 200px;
-            background-color: #e0e0e0;
             border: 1px solid #ccc;
-            flex-shrink: 0;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: #666;
-            font-style: italic;
             overflow: hidden;
+            flex-shrink: 0;
         }
-
+        
         .movie-image img {
             width: 100%;
             height: 100%;
@@ -73,24 +71,16 @@
         
         .movie-text {
             max-width: 500px;
-            display: flex;
-            flex-direction: column;
-        }
-        .movie-layout {
-            display: flex;
-            flex-direction: column;
-            align-items: flex-end;
-            gap: 15px;
-            max-width: 500px;
+            text-align: left;
         }
         
         .movie-description {
-            margin-bottom: 0;
+            margin-bottom: 15px;
             text-align: left;
         }
 
         .movie-links {
-            text-align: right;
+            text-align: left;
         }
         
         .movie-links a {
@@ -103,7 +93,7 @@
         .movie-links a:hover {
             text-decoration: none;
         }
-        
+
         hr {
             border: none;
             height: 1px;
